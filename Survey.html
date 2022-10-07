@@ -5,29 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey form</title>
+    <link rel="stylesheet" href="survey.css">
 </head>
 <body>
-    <main>
-        <div>
+    <main id="container">
+        <div id="child1">
             <header>
 <h1>freeCodeCamp Survey Form</h1>
             </header>
             <p>Thank you for taking the time to help us improve the platform</p>
         </div>
-        <div>
-            <form action="" method="get">
+        <div id="child2">
+            <form action="" method="get" id="survey-form">
 <label for="name">Name</label> <br>
-<input type="text" id="name" name="text" placeholder="Enter your name" size="50"><br>
+<input type="text"  size="50"id="name" name="text" placeholder="Enter your name" size="50"><br><br>
 
 <label for="email">Email</label><br>
-<input type="email" id="email" name="name" placeholder="Enter your Email" size="50"><br>
+<input type="email" size="50" id="email" name="name" placeholder="Enter your Email" size="50"><br><br>
 
 <label for="age">Age (optional)</label><br>
-<input type="number" id="age" name="age" placeholder="Age" size="50"><br>
+<input type="number" size="50" id="age" name="age" placeholder="Age" size="50"><br><br>
 
 <label for="selection">Which option best describes your current role?</label><br>
 
-<select name="selection" id="selection" >
+<select name="selection" id="selection"  >
 
     <option value="select an option">Select current role</option>
 
@@ -97,7 +98,11 @@
 
 <label for="Acourses"><input type="checkbox" name="Additional Courses" value="Additional Courses">Additional Courses</label><br><br>
 
+<label for="comments">Any comments or suggestions?</label><br>
 
+<textarea name="text" id="comments" cols="50" rows="8">Enter your comment here...</textarea><br><br>
+
+<input type="submit" id="submit">
 
             </form>
         </div>
